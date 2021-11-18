@@ -11,8 +11,11 @@ GameObject:
   - component: {fileID: 5304200718371760655}
   - component: {fileID: 4169395292999373835}
   - component: {fileID: 152069426}
+  - component: {fileID: 580391594646854903}
   - component: {fileID: 152069427}
   - component: {fileID: 2371133593690371351}
+  - component: {fileID: 1515527977}
+  - component: {fileID: 3264936491582435582}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -30,6 +33,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7370825620208530121}
   m_Father: {fileID: 0}
@@ -90,6 +94,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+--- !u!114 &580391594646854903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235819160915860900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dfa22f237572194fb132fc3019f84b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!195 &152069427
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -114,7 +130,7 @@ NavMeshAgent:
   m_ObstacleAvoidanceType: 4
 --- !u!95 &2371133593690371351
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -127,10 +143,36 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1515527977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235819160915860900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc9e26ea5107e524ebddca60a7ab8563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponRange: 2
+--- !u!114 &3264936491582435582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235819160915860900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e754b4ed67c016949a71c0123a8c4edf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7370825620208883667
 PrefabInstance:
   m_ObjectHideFlags: 0
